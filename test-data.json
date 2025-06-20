@@ -1,0 +1,54 @@
+{
+  "initialize": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "initialize",
+    "params": {
+      "protocolVersion": "2024-11-05",
+      "capabilities": {},
+      "clientInfo": {
+        "name": "test-client",
+        "version": "1.0.0"
+      }
+    }
+  },
+  "tools_list": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/list"
+  },
+  "search_blog": {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "method": "tools/call",
+    "params": {
+      "name": "search_blog",
+      "arguments": {
+        "keyword": "技術",
+        "limit": 5
+      }
+    }
+  },
+  "get_recent_posts": {
+    "jsonrpc": "2.0",
+    "id": 4,
+    "method": "tools/call",
+    "params": {
+      "name": "get_recent_posts",
+      "arguments": {
+        "limit": 3
+      }
+    }
+  },
+  "get_post_by_url": {
+    "jsonrpc": "2.0",
+    "id": 5,
+    "method": "tools/call",
+    "params": {
+      "name": "get_post_by_url",
+      "arguments": {
+        "url": "https://example.hatenablog.com/entry/2024/01/01/120000"
+      }
+    }
+  }
+}

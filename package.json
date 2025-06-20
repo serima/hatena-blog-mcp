@@ -1,0 +1,25 @@
+{
+  "name": "hatena-blog-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server for Hatena Blog integration",
+  "main": "api/mcp.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step needed'",
+    "start": "node api/mcp.js"
+  },
+  "dependencies": {
+    "xml2js": "^0.6.2"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": [
+    "mcp",
+    "hatena-blog",
+    "claude",
+    "serverless"
+  ],
+  "author": "",
+  "license": "MIT"
+}
